@@ -1,0 +1,222 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 17, 2018, 10:20:54 AM
+    Author     : phuc
+*/
+
+body {
+    font-family: "Roboto", sans-serif !important;
+}
+/*
+   Customize checkbox
+/* Customize the label (the container) */
+.my-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.my-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.my-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: solid #2196F3 thin;
+    transition: 0.3s;
+}
+/* On mouse-over, add a grey background color */
+.my-container:hover input ~ .my-checkmark {
+    box-shadow: 0px 0px 10px #2196F3;
+}
+/* When the checkbox is checked, add a blue background */
+.my-container input:checked ~ .my-checkmark {
+    background-color: #2196F3;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.my-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.my-container input:checked ~ .my-checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.my-container .my-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* Search menu */
+#bg-search {
+    width: 100%; 
+    height: 450px; 
+    background: url(../img/bg-img/search-bg.jpg) no-repeat center;
+    background-size: cover; 
+    position: relative
+}
+#menu-search {
+    width: 100%; 
+    height: 200px; 
+    margin: 200px auto; 
+    position: absolute;
+    z-index: 2;
+}
+#form-search {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+#form-search .card-header {
+    background-color: #fff;
+}
+.advance-search-checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: solid #2196F3 thin;
+}
+@media (max-width: 768px) {
+    #bg-search {
+        height: 350px;
+    }
+    #menu-search {
+        margin: 0 auto;
+    }
+    #form-search .card {
+        border-radius: 0px;
+    }
+}
+
+/* Customize post */
+.single-blog-post.style-2 .blog-content .post-title {
+    margin-bottom: 0px;
+}
+.single-blog-post.style-2 .blog-content .post-author, .post-date {
+    font-size: 11px !important;
+}
+.single-blog-post.style-2 .blog-content .post-view-rate {
+    float: right;
+}
+.single-blog-post.style-2 .blog-thumbnail {
+    height: 200px;
+}
+.single-blog-post.style-2 .blog-thumbnail img {
+    height: 100%;
+}
+
+.single-blog-post.style-4 .blog-content .post-author {
+    display: block;
+    font-size: 11px;
+    color: #636363;
+    font-weight: 500;
+}
+.single-blog-post.style-4 .blog-thumbnail {
+    height: 130px;
+}
+.single-blog-post.style-4 .blog-thumbnail img {
+    height: 100%;
+}
+
+.single-blog-post.style-5 .blog-content .show-more-link {
+    font-size: 11px;
+    color: #636363;
+    font-weight: 500;
+}
+.single-blog-post.style-5 .blog-content .post-view-rate {
+    margin-left: 30px;
+}
+.single-blog-post.style-5 .blog-thumbnail {
+    height: 275px;
+}
+.single-blog-post.style-5 .blog-thumbnail img {
+    height: 100%;
+}
+.single-blog-post.style-5 .blog-content .post-author {
+    margin-bottom: 10px !important;
+}
+
+.single-blog-post.style-6 .blog-content .post-author {
+    font-size: 11px;
+    color: #636363;
+    font-weight: 500;
+}
+.single-blog-post.style-6 .blog-content .post-view-rate {
+    float: right;
+}
+.single-blog-post.style-6 .blog-thumbnail {
+    height: 150px;
+}
+.single-blog-post.style-6 .blog-thumbnail img {
+    height: 100%;
+}
+
+.post-view-rate {
+    font-size: 11px;
+    color: #636363;
+}
+
+.carousel-item {
+    height: 450px;
+    text-align: center;
+    background-color: black;
+}
+.carousel-inner img {
+    width: auto;
+    height: 100%;
+}
+
+@media (max-width: 568px) {
+    .carousel-item {
+        height: 250px;
+    }
+    .text-choice {
+        font-size: 0.7rem !important;
+        margin-top: 8px !important;
+    }
+    .choice-link {
+        font-size: 0.5rem !important;
+    }
+}
+
+.thumb-image {
+    width: 180px;
+    height: 130px;
+    margin: 13px 13px 0px 0px;
+    background-position: center center;
+    background-size: cover;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+    display: inline-block;
+}
